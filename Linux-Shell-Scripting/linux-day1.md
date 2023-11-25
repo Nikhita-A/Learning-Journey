@@ -1,6 +1,6 @@
 ### Linux concepts
 
-![Preview]("C:\Users\abc\Downloads\QT\LearningJourney\linux-images\linux01.png")
+![Preview](images/linux01.png)
 
 ### date
 * `date`: displays the current date and time (for more info date --help)
@@ -27,12 +27,12 @@ sftp -i <privatekey-pemfile-path> user@<public-ip>
 ```bash
 put <local-file-name>
 ```
-![Preview]("images\linux02.png")
+![Preview](images/linux02.png)
 * `get`:  this command uploads remote files to local
 ```bash
 get <remote-file-name>
 ```
-![Preview]("images\linux03.png")
+![Preview](images/linux03.png)
 
 * `ls` and `lls`
 * `pwd`: Remote wordir
@@ -55,7 +55,7 @@ get <remote-file-name>
 ### logs
 * `logs`: troubleshoot errors based on loga
 * `/var/log`:  default linux machine logs folder. Any installed application logs will be present in this folder. For example, when we install apache2 the logs would be present in `/var/log/apache2 `
-![Preview]("images\linux04.png")
+![Preview](images/linux04.png)
 * `/var/log/syslog`: default system logs
 
 ### environmental variables
