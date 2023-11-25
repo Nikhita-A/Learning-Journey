@@ -7,28 +7,31 @@
 
 ### scp
 * `scp`: Secure Copy file Protocol. To copy/upload any file from local to remote machine
-```bash
+```
 scp <source-file-name> user@<public-ip>:<dest-path>
+
 scp .\develop.sh ubuntu@52.23.165.157:/home/ubuntu/develop.sh
+
 or
+
 scp -i <privatekey-pemfile-path> <source-file-name> user@<public-ip>:<dest-path>
 ```
 
 ### sftp
 * `sftp`: Secure File Transfer protocol. To download files from remote to local machine
 * Connect to sftp
-```bash
+```
 sftp -i <privatekey-pemfile-path> user@<public-ip>
 ```
 * After connecting to sftp, use `put`, `get`
 *  `put`: this command uploads local files to remote
-```bash
+```
 put <local-file-name>
 ```
 ![linux02](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/62654101-b444-492a-be49-7a2e820ade5d)
 
 * `get`:  this command uploads remote files to local
-```bash
+```
 get <remote-file-name>
 ```
 ![linux03](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/0565ecf2-7b22-4c24-96d2-9ca2dd32a744)
@@ -62,13 +65,13 @@ get <remote-file-name>
 
 ### environmental variables
 * `env`:  environmental variables
-```bash
+```
 export sysname=developer
 echo $sysname
 Output: developer
 ```
 * The above example is temporary environmental variable
-```bash
+```
 echo "export sysname=developer" >> ~/.bashrc
 echo $sysname
 Output: developer
