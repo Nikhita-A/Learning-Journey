@@ -1,8 +1,5 @@
 ### Linux concepts
 
-![linux01](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/7f396bb3-686c-443a-b7de-c7d3a03c9a83)
-
-
 ### date
 * `date`: displays the current date and time (for more info date --help)
 * `date +"%d"`: displays the date i.e., 25
