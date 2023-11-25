@@ -1,6 +1,7 @@
 ### Linux concepts
 
-![Preview](images/linux01.png)
+![linux01](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/7f396bb3-686c-443a-b7de-c7d3a03c9a83)
+
 
 ### date
 * `date`: displays the current date and time (for more info date --help)
@@ -27,12 +28,14 @@ sftp -i <privatekey-pemfile-path> user@<public-ip>
 ```bash
 put <local-file-name>
 ```
-![Preview](images/linux02.png)
+![linux02](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/62654101-b444-492a-be49-7a2e820ade5d)
+
 * `get`:  this command uploads remote files to local
 ```bash
 get <remote-file-name>
 ```
-![Preview](images/linux03.png)
+![linux03](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/0565ecf2-7b22-4c24-96d2-9ca2dd32a744)
+
 
 * `ls` and `lls`
 * `pwd`: Remote wordir
@@ -55,7 +58,9 @@ get <remote-file-name>
 ### logs
 * `logs`: troubleshoot errors based on loga
 * `/var/log`:  default linux machine logs folder. Any installed application logs will be present in this folder. For example, when we install apache2 the logs would be present in `/var/log/apache2 `
-![Preview](images/linux04.png)
+  
+![linux04](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/3ff312ce-a5c4-42d8-aeee-8f2716f6a650)
+
 * `/var/log/syslog`: default system logs
 
 ### environmental variables
