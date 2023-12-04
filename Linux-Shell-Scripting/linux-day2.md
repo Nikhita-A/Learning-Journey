@@ -88,12 +88,12 @@ done
 ### 'while' loop function
 
 Operations:
-=    -eq
-!=   -ne
->    -gt
-<    -lt
-<=   -le
->=   -ge
+=   :  -eq
+!=  :  -ne
+>   :  -gt
+<   :  -lt
+<=  :  -le
+>=  :  -ge
 
 * Script 1
 
