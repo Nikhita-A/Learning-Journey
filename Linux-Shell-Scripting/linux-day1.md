@@ -1,5 +1,19 @@
 ### Linux concepts
 
+* kernel is sub process
+* shell is like a compiler or an interpreter
+* Server is as of now inorder to host any application we need to have a setup server which is something that responds when we send requests
+* kernel and shell can be combinedly called 'operating system'
+```
+-: regular file
+d: directory
+b: block device
+c: charactory device
+```
+* `curl ident.me`: gives the public ip
+* sbin: the commands executed by root user are present in `sbin`(super binary)
+* `etc` is a readable text configuration
+
 ### date
 * `date`: displays the current date and time (for more info date --help)
 * `date +"%d"`: displays the date i.e., 25
