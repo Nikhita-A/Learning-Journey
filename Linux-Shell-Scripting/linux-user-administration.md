@@ -4,9 +4,9 @@ LINUX - USER ADMINISTRATION
 ### USER TYPES:
 
 * There are 3 types of users in linux:
-      * normal or guest user: useradd or adduser
-      * system or service users: packages like apache, nginx
-      * root user: all permissions
+    * normal or guest user: useradd or adduser
+    * system or service users: packages like apache, nginx
+    * root user: all permissions
 
 * For root user the uid is 0
 * `cat /etc/passwd`: to view the users i.e. user info
