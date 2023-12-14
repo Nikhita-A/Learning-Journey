@@ -10,6 +10,8 @@
 
 file=test.txt
 
+# Check whether the file exists or not
+
 if [[ -f $file ]]; then
    cat $file
    exit 0
