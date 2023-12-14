@@ -16,6 +16,6 @@ if [[ ! -f $file ]]; then
     echo "The file $file does not exist"
     exit 1
 else
-    echo "The contents of the file is as follows:"
+    echo "The contents of the file are as follows:"
     cat $file
 fi
