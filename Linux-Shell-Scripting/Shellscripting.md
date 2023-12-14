@@ -5,7 +5,7 @@ SHELL SCRIPTING
 * What are positional and named arguments?
 * Difference between parameters and arguments
 * What are static and interactive scripts?
-* Whenever we call one script from another script, one thing to remember is to _export the variables_, so that the variable value 
+* Whenever we call one script from another script, one thing to remember is to _export the variables_, so that the variable can be defined in both the scripts
 * `-v`: verbose mode and `-x`: debug mode
 
 
