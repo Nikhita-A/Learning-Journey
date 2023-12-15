@@ -29,3 +29,8 @@ read -s -p "Enter password"
 ### Test commands
 
 [Refer here for test command explaination](https://directdevops.blog/2020/08/31/linux-classroom-series-31-aug-2020/)
+
+
+### Default values to parameters
+
+[Setting default parameter values](https://directdevops.blog/2020/09/02/linux-classroom-series-02-sept-2020/)
