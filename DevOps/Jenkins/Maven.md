@@ -50,12 +50,14 @@ MAVEN
     * `validate` the project, then will try to 
     * `compile` the sources 
         * If the `mvn compile` is success, it will create the `.class` files in the `target/classes/<project-name>.class` location
+
         ```
         target/classes/hello-world.class
         ```
     * run the sources against the `tests`
     * `package` the binaries (e.g. jar) 
         * When we run `mvn package`, it creates a jar or war file in the _target_ folder `target/<project-name>-<version-name>.jar`, in the `<project-name>-<version-name>.jar` format
+        
         ```
         hello-world-1.0.0.jar
         springpetclinic-1.1.0-SNAPSHOT.jar
