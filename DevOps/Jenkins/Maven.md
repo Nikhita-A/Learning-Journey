@@ -74,7 +74,8 @@ MAVEN
 
 ### Maven repositories
 
-![Maven repository structure](Images/image-1.png)
+![image-1](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/441bacfd-fbcf-4ffa-99b4-53f7768c7b65)
+es/image-1.png)
 
 [Three types of maven repositories](https://directdevops.blog/2023/11/24/devops-classroom-notes-24-nov-2023/)
 
