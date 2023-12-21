@@ -45,4 +45,4 @@ Jenkins Concepts
 
 * Pipeline Syntax
 
-![Pipeline syntax](Images/image-2.png)
+![image-2](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/5f2edf3a-72bc-4447-866f-15562830d4b7)
