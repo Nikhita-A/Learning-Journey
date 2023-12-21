@@ -49,14 +49,15 @@ MAVEN
 * When the `default` lifecycle is used, Maven will first 
     * `validate` the project, then will try to 
     * `compile` the sources 
-        * If the `mvn compile` is success, it will create the `.class` files in the `target/classes/<project-name>.class` location
-
+        * If the _mvn compile_ is success, it will create the `.class` files in the `target/classes/<project-name>.class` location
         ```
         target/classes/hello-world.class
         ```
     * run the sources against the `tests`
+        * _mvn test_ will run unit tests and creates test reports in xml format
+        * test results will be store in `target/surefire-reports/TEST-*.xml`
     * `package` the binaries (e.g. jar) 
-        * When we run `mvn package`, it creates a jar or war file in the _target_ folder `target/<project-name>-<version-name>.jar`, in the `<project-name>-<version-name>.jar` format
+        * When we run _mvn package_, it creates a jar or war file in the _target_ folder `target/<project-name>-<version-name>.jar`, in the `<project-name>-<version-name>.jar` format
         
         ```
         hello-world-1.0.0.jar
@@ -65,9 +66,17 @@ MAVEN
         ```
     * run integration tests against that package 
     * `verify` the integration tests 
-    * `install` the verified package to the local repository, then 
+    * `install` the verified package to the local repository
+        * this will copy the artifacts to local repo
     * `deploy` the installed package to a remote repository.
+        * this will copy the artifacts to remote repo
 
+
+### Maven repositories
+
+![Maven repository structure](Images/image-1.png)
+
+[Three types of maven repositories](https://directdevops.blog/2023/11/24/devops-classroom-notes-24-nov-2023/)
 
 ### Maven central repository
 
