@@ -32,7 +32,7 @@ ansible -m ping -i hosts all
 
 ### Ansible Playbook Structure
 
-![Ansible Playbook Structure](image.png)
+![Ansible Playbook Structure](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/b699e6f6-283d-4291-95fe-b9688e8c7fae)
 
 ```yaml
 ---
