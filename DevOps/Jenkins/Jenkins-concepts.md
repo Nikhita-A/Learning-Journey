@@ -37,12 +37,3 @@ Jenkins Concepts
 [Refer here for more info on nodes and executors](https://directdevops.blog/2023/11/26/devops-classroom-notes-26-nov-2023/)
 
 * On Linux nodes, Jenkins expects JDK to be present
-
-
-### Pipeline as a Code
-
-[Refer here for detailed notes](https://directdevops.blog/2023/11/27/devops-classroom-notes-27-nov-2023/)
-
-* Pipeline Syntax
-
-![image-2](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/5f2edf3a-72bc-4447-866f-15562830d4b7)
