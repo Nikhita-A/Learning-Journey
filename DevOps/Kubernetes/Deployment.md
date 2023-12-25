@@ -7,7 +7,7 @@ Deployment in k8s
 
 ### Difference between container, pod and deployment
 
-![container vs pod vs deployment](Images/image.png)
+![Deployment vs pod vs container](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/d9be2004-7424-4494-b962-ac9ad29d77d0)
 
 ### Replica set
 
