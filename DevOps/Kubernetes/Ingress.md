@@ -16,7 +16,7 @@ Kubernetes Ingress
 * Traffic routing is controlled by rules defined on the Ingress resource.
 * Here is a simple example where an Ingress sends all its traffic to one Service:
 
-![k8s ingress](Images/image1.png)
+![image1](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/83c84ff1-bd16-44c0-a541-0cb1d2791252)
 
 * Sample ingress YAML
 
