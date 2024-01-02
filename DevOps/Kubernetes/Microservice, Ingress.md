@@ -2,6 +2,8 @@ Kubernetes Ingress
 -------------------
 
 ### Microservice
+
+[Refer here for detailed notes](https://directdevops.blog/2023/12/31/devops-classroom-notes-31-dec-2023/)
  
 * These category of applications where you have a smaller component of the application running on its own with its own database is called a `microservice`
 * The basic concept of microservice is it is a smaller component which can run individually and for each microservice we write a `deployment`
