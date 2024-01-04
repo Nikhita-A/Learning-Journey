@@ -3,6 +3,15 @@ Service in k8s
 
 * Service is the critical component of k8s
 * Whenever we create a _deployment_, we also create a _Service_ along with it
+* A abstract way to expose an application running on a set of pods as a network service
+* It is just like a proxy that identifies the pods using `labels and selectors`
+* When we create a service, the `cloud controller manager` will generate an _external ip address_ to the service
+
+
+### Is the load balancer service type only restricted to cloud providers?
+
+![LB to cloud](Images/image2.png)
+
 
 ### What does service in k8s do
 
