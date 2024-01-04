@@ -58,7 +58,8 @@ spec:
 ```
 * Host-based and Path-based routing
 
-![Ingress](Images/image3.png)
+![image3](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/cd82e1a3-90c5-41f9-9055-3a2c043bf03b)
+
 
 ### Ingress Controller
 
