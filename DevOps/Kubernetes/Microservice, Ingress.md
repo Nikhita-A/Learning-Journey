@@ -74,8 +74,12 @@ spec:
 * So, to solve this we create an `ingress` and with an `ingress controller` and it will route the traffic to the service
 * Ingress is an API object in Kubernetes that manages external access to services within a cluster. 
 * It allows you to define how external HTTP/S traffic should be routed to your services based on rules.
-* Ingress is particularly useful for handling HTTP and HTTPS traffic, providing features like path-based routing, SSL termination, and load balancing. 
-* It acts as a `layer 7 (application layer)` load balancer.
+* Ingress is particularly useful for handling HTTP and HTTPS traffic, providing features like path-based routing, SSL termination, and load balancing.
+* `Service` works at `layer 4` 
+* Ingress acts as a `layer 7 (application layer)` load balancer.
+* External endpoint for every service not a good idea
+* So, The main advantage of ingress is 
+    * Rather than having multiple public endpoints(service), we will have only one public endpoint(ingress)
 
 
 
