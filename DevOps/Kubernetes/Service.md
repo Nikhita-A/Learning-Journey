@@ -10,7 +10,8 @@ Service in k8s
 
 ### Is the load balancer service type only restricted to cloud providers?
 
-![LB to cloud](Images/image2.png)
+
+![image2](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/f6c34852-07fb-4dcc-b9b7-3eab086f0eb5)
 
 
 ### What does service in k8s do
