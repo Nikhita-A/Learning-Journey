@@ -1,6 +1,10 @@
 Kubernetes Architecture
 ------------------------
 
+![k8s architecture](Images/image8.png)
+
+![pod creation workflow](Images/image9.png)
+
 * In Kubernetes, there are two components:
     * Control Plane (Master nodes): 
         * Responsible for controlling all the actions
