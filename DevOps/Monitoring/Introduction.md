@@ -24,6 +24,8 @@ Monitoring
 
 ### Four Golden Signals of Monitoring
 
+* __LETR__: Latency, Error rate,  Traffic, Resource saturation
+
 [Refer here for Four Golden Signals](https://www.gremlin.com/blog/four-golden-signals/)
 
 ### Three pillars (Golden Triangle △) of Observability
