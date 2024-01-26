@@ -34,4 +34,6 @@ TERRAFORM BASICS
 ```
 init --> plan --> apply --> destroy 
 ```
+
+[Refer here for detailed notes](https://github.com/iam-veeramalla/terraform-zero-to-hero)
  
