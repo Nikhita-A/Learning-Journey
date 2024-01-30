@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spc-svc
+spec:
+  type: ClusterIp 
+  selector:
+    app: spc
+  ports:
+    - name: spc-svc-port
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+    

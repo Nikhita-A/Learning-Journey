@@ -1,0 +1,45 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-petclinic-deploy
+spec:
+  minReadySeconds: 5
+  replicas: 4
+  selector:
+    matchLabels:
+      app: spc
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: spc
+        env: dev
+    spec:
+      containers:
+        - name: spc-container
+          image: nikhitaa/spring-petclinic:v1
+          resources:
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          ports:
+            - name: spc-port
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe: 
+            httpGet: 
+              path: /
+              port: 8080
+            initialDelaySeconds: 2
+          readinessProbe:
+            httpGet: 
+              path: /
+              port: 8080
+            initialDelaySeconds: 2
+          
+                  
