@@ -23,12 +23,13 @@ spec:
           app: nopCommerce
           purpose: practice 
       spec: 
-        initContainers:
+        containers:
           - name: nopCommerce-container
             image: nikhitaa/nopcommerce:1.0
             resources:
-              cpu: 500m
-              memory: 128Mi
+              limits:
+                cpu: 500m
+                memory: 256Mi
             ports:
               - containerPort: 5000
                 protocol: TCP
@@ -36,18 +37,18 @@ spec:
               httpGet: 
                 path: /
                 port: 5000
-        containers: 
-          - name: mysql-container
-            image: mysql:8
-            ports:
-              - containerPort: 3306
-                protocol: TCP
-            resources:
-              cpu: 250m
-              memory: 256Mi
             readinessProbe:
               httpGet:
                 path: /orders
-                port: 3306
-        
+                port: 5000
+        initContainers: 
+          - name: mysql-container
+            image: mysql:8
+            env:
+              - name: MYSQL_ROOT_PASSWORD
+                value: mysqlroot@123
+              - name: MYSQL_DATABASE
+                value: mysql-nop
+            
+            
       
