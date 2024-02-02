@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nopCommerce-deploy
+spec:
+  minReadySeconds: 1
+  replicas: 5
+  selector:
+    matchExpressions:
+      - key: app 
+        operator: In 
+        values:
+          - nopCommerce 
+    strategy:
+      type: RollingUpdate
+      rollingUpdate: 
+        maxSurge: 20%
+        maxUnavailable: 20%
+    template:
+      metadata:
+        labels:
+          app: nopCommerce
+          purpose: practice 
+      spec: 
+        containers: 
+          - name: nopCommerce-container
+            image:
+            ports:
+              - containerPort: 5000
+                protocol: TCP
+            resources:
+              cpu: 500m
+              memory: 256Mi
+            livenessProbe:
+              httpGet: 
+                path: /
+                port: 5000
+            readinessProbe:
+              httpGet:
+                path: /orders
+                port: 5000
+        
+      
