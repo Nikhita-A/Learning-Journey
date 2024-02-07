@@ -1,6 +1,8 @@
 Pod in Kubernetes
 ------------------
 
+[Refer here for full notes](https://directdevops.blog/2024/01/27/devops-classroom-notes-27-jan-2024/)
+
 * In k8s, _pod_ is the smallest unit. A pod is nothing but one or group of containers (init containers and side car containers)
 * In k8s, we deploy pods instead of containers.
 * A pod can contain single container or multiple containers
