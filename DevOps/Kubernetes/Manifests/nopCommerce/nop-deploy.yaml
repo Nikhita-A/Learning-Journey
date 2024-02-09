@@ -41,7 +41,6 @@ spec:
               httpGet:
                 path: /orders
                 port: 5000
-        initContainers: 
           - name: mysql-container
             image: mysql:8
             env:
