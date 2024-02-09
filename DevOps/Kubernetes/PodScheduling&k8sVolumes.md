@@ -17,6 +17,9 @@ Pod Scheduling
     * Choosing the pod based on other pod's location is present based on topology(other external factors like nodes, availability zones, disk type etc..) using labels 
 * Pod Anti-affinity: 
     * Choosing the pod based on other pod's location is __NOT__ present
+
+[Refer here for affinity and anti-affinity manifests](https://github.com/asquarezone/KubernetesZone/commit/65baeef714ac1c688f3f7ba0b26a073f79dd23ce)
+
 * Node Affinity: 
     * It is almost like nodeSelector but the rules of nodeAffinity are flexible and not that rigid as nodeSelector
 * taints and tolerations: 
