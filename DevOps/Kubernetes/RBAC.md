@@ -7,6 +7,8 @@ Docker Compose
 Kubernetes RBAC
 ---------------
 
+[Refer here for full notes with yaml examples](https://directdevops.blog/2024/02/10/devops-classroom-notes-10-feb-2024-2/)
+
 * Kubernetes RBAC(Roll Back Access Control) deals with `User Management` in k8s
 * K8s will not have the `user` information stored in it locally, but the `ServiceAccount` information is stored in __etcd__
 * K8s stores the `RoleBinding` and `ClusterRoleBinding` which contains the `user information`. This is how k8s authenticates and authorizes the users because _users_ are external and _ServiceAccounts_ are internal components to k8s
@@ -35,3 +37,10 @@ ls
 ```
 ![k8s certificate authority](Images/image10.png)
 * For kubernetes cloud setup, Cloud providers will not give access to the certificate authorities
+
+### automountServiceAccountToken
+
+* In k8s, when we create any pod, in one folder `/var/run/secrets/kubernetes.io/serviceaccount` inside the container, a volumeMount will be created with CA certificate mounted to it which is not a good practice
+![mount path](Images/image11.png)
+![ca certificate](Images/image12.png)
+* So, always __disable__ automounting service account tokens in PodSpec
