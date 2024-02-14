@@ -21,6 +21,25 @@ Kubernetes Ingress
 
 ![image1](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/83c84ff1-bd16-44c0-a541-0cb1d2791252)
 
+* Service operates at `layer 4` load balancing and it does  not have the intelligence of _http_ and thus cannot operate via urls
+* The only thing it knows it __ip addresses and port__
+* We need a `layer 7` load balancing which is not there is k8s service
+* This is where `Ingress` comes into play
+* Here we can do
+    * path based routing
+    * domain/name based routing 
+* The problem with k8s ingress is, ingress cannot do routing
+* We can only specify the routing rules in ingress
+* So, here we take the help of `Ingress Controller` which can actually do routing
+* k8s by default do not have any ingress controller. So we need to rely on third party ingress controllers. Eg: nginx, traefik, HAProxy, aws application LB
+* We specify the rules in _ingress_ and those rules are implemented by _ingress controller_
+![osi model](https://cf-assets.www.cloudflare.com/slt3lc6tev37/6ZH2Etm3LlFHTgmkjLmkxp/59ff240fb3ebdc7794ffaa6e1d69b7c2/osi_model_7_layers.png)
+
+* How to secure urls in k8s?
+    * tls termination: security at the LoadBalancer(Ingress Controller) level
+    * secure containers: providing security to every single container running inside the cluster
+    * service mesh (linkerd and istio)
+
 * Simple ingress YAML
 
 ```yaml
@@ -81,6 +100,3 @@ spec:
 * External endpoint for every service not a good idea
 * So, The main advantage of ingress is 
     * Rather than having multiple public endpoints(service), we will have only one public endpoint(ingress)
-
-
-
