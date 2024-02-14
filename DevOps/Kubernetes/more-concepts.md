@@ -1,5 +1,5 @@
-Statefulsets, ConfigMaps and Secrets
-------------------------------------
+Statefulsets
+------------
 
 [Refer here for more notes](https://directdevops.blog/2024/02/04/devops-classroom-notes-04-feb-2024-2/)
 
@@ -27,13 +27,40 @@ Eg: mongo-0.nginx-svc
     # nameOfPod = mongo-0
 ```
 
-### Config Maps
+Config Maps
+-----------
 
 * Config maps can be used in two ways:
     * environmental variables
     * mount paths
 * When we update the values in a config map, the changes doesnot apply for the existing pod but gets applied for the new pods created after the changes are done
 
-### Kubernetes Secrets
+Kubernetes Secrets
+------------------
 
 * Secrets like passwords in k8s are stored in the form of `base64` encoding
+
+AutoScaling in Kuberenetes
+--------------------------
+
+* Only thing that works on premises for scaling is `Horizontal Pod Autoscaling (HPA)` when metrics server is enabled
+* When it comes to autoscaling, we have three types of autoscaling
+    * HPA (on-premises): k8s itself gives this feature
+    * VPA
+    * ClusterAutoScaler (Cloud/managed k8s service): Every cloud has its own autoscaling feature and the basic autoscaling for managed k8s service comes from the cloud's auto scaling feature itself
+
+Upgrading k8s clusters
+-----------------------
+
+* `Cordon`: no further scheduling should be done on that node (take diversion)
+* `Drain`: all the running pods on the node should be re-allocated to some other node
+* `Upgrade`: upgrading the cluster
+* `Uncordon`: allowing scheduling on the node after the cluster upgration is completed
+* Before doing all of this, `etcd backup` should be taken
+* This should not be done on all the clusters at the same time, it has to be done one by one
+```bash
+kubectl cordon node-name
+kubectl drain node-name
+kubectl upgrade node-name
+kubectl uncordon node-name
+```
