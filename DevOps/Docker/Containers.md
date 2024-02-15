@@ -3,15 +3,15 @@ Evolution of running applications
 
 [Refer here for explaination](https://directdevops.blog/2023/12/29/devops-classroom-notes-29-dec-2023/)
 
-* Generation 1: __Physical Machines__
+### Generation 1: __Physical Machines__
 
 ![Physical machines architecture](https://i0.wp.com/directdevops.blog/wp-content/uploads/2023/12/docker1.png?w=800&ssl=1)
 
-* Generation 2: __Hypervisors (Vmware)__
+### Generation 2: __Hypervisors (Vmware)__
 
 ![Hypervisors architecture](https://i0.wp.com/directdevops.blog/wp-content/uploads/2023/12/docker2.png?w=800&ssl=1)
 
-* Generation 3: __Containers (Docker)__
+### Generation 3: __Containers (Docker)__
 
 ![Containers architecture](https://i0.wp.com/directdevops.blog/wp-content/uploads/2023/12/docker3.png?w=800&ssl=1)
 
@@ -23,15 +23,15 @@ Architectures for running applications
 
 [Refer here for complete notes](https://directdevops.blog/2023/12/31/devops-classroom-notes-31-dec-2023/)
 
-* Monolith architecture
+### Monolith architecture
 
 ![Monolith architecture](https://i0.wp.com/directdevops.blog/wp-content/uploads/2023/12/docker5.png?w=800&ssl=1)
 
-* Microservice architecture
+### Microservice architecture
 
 ![Microservice architecture](https://i0.wp.com/directdevops.blog/wp-content/uploads/2023/12/docker6.png?w=800&ssl=1)
 
-* Docker architecture
+### Docker architecture
 
 
 Docker Installation
