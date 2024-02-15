@@ -14,9 +14,11 @@ Kubernetes Ingress
 
 [Refer here for official docs](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
+* The basic concept of ingress is __having only one external endpoint for all the microservices__
 * Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. 
 * Traffic routing is controlled by rules defined on the Ingress resource.
 * Ingress cannot run on it own. Whenever we create an ingress, we also need to create an `Ingress Controller`
+* Ingress deals/communicates with _services(svc)_ and not _pods_
 * Here is a simple example where an Ingress sends all its traffic to one Service:
 
 ![image1](https://github.com/Nikhita-A/Learning-Journey/assets/148535211/83c84ff1-bd16-44c0-a541-0cb1d2791252)
@@ -87,6 +89,7 @@ spec:
 * Ingress Controller is loadbalancer that we can choose from the requirements
 * Ingress Controller looks for the ingress resources and updates and configures the load balancer
 * The configuration of ingress varies from controller to controller, it can sometimes be inside the cluster or outside the cluster
+* `ingressClassName` in yaml refers to the _Ingress Controller_
 
 ### Why Ingress over Service?
 
