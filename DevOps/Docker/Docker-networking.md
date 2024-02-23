@@ -7,6 +7,14 @@ Docker Networking
     * Communication between two containers 
     * Communication between containers and the host
     * Good network isolation between the containers
+* Single Host Container networking is straight forward but multi host container networking is beyond just networking. So generally `orchestration` is used.
+* Container orchestration is used to `manage multiple containers running on multiple hosts`. 
+* Popular container orchestration engines
+    * Kubernetes
+    * Docker Swarm
+    * Elastic Container Services (ECS)
+    * Azure Container Instances (ACI)
+    * Apache Mesos
 
 
 ### Types of Docker Networking
