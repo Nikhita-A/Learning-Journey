@@ -6,7 +6,15 @@ Service in k8s
 * A abstract way to expose an application running on a set of pods as a network service
 * It is just like a proxy that identifies the pods using `labels and selectors`
 * When we create a service, the `cloud controller manager` will generate an _external ip address_ to the service
+* When we create a service, service creates `endpoint` with all the ip-addresses of matching pods
+![svc endpoint](https://i0.wp.com/directdevops.blog/wp-content/uploads/2024/01/k8s26.png?w=800&ssl=1)
 
+
+### Purpose of /etc/resolve.conf
+
+* Specifically, it `translates domain names to IP addresses` by querying the Domain Name Server (DNS). 
+* The /etc/resolv. conf file is the file that configures the domain name resolver.
+* It's responsible for translating machine names into IP addresses.
 
 ### Is the load balancer service type only restricted to cloud providers?
 
