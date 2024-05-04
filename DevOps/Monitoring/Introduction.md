@@ -1,6 +1,8 @@
 Monitoring
 ----------
 
+* Thr objective of Monitoring is to have a `high` MTTF (Mean Time To Failure) and a `low` MTTR (Mean Time To Recover)
+
 ### Proactive and Reactive approach
 
 * There are two approches to figure out issues and respond in the cases of failures
