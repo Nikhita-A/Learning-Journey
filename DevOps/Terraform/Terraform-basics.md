@@ -36,4 +36,13 @@ init --> plan --> apply --> destroy
 ```
 
 [Refer here for detailed notes](https://github.com/iam-veeramalla/terraform-zero-to-hero)
- 
+
+### Difference between a 'resource' and 'data source' in terraform
+
+* Resource: 
+    * A resource in Terraform represents a piece of infrastructure that Terraform can manage. 
+    * It could be a virtual machine, a network interface, a DNS record, etc. 
+    * Resources are typically things that you create, update, or delete as part of managing your infrastructure.
+* Data Source: 
+    * A data source in Terraform is used to fetch information or data from an external source that Terraform does not manage. 
+    * This could include information about existing resources or configurations that you need to reference or use in your Terraform configuration.
