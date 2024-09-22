@@ -30,6 +30,8 @@ INTRODUCTION TO PYTHON
 * Python as a programming language supports some `inbuilt functions` which are written and managed by python itself
 * Each data type in python has inbuilt functions
 
+* `split` function
+
 ```python
 # Split the username
 
@@ -46,3 +48,37 @@ print(arn.split("/")[0])
 arn:aws:iam::123456789012:user
 
 ```
+
+* [Examples for all the other inbuilt functions](https://github.com/Nikhita-A/python-for-devops/tree/main/Day-02/examples)
+
+
+
+### Regex (Regular expression) function
+
+* This function is used `to find particular patterns in a function`
+* DevOps usecase: 
+    * Consider a huge `log file` where we can use this _regex function_ to filter out the `error logs` or `warning logs`
+
+
+### Keywords
+
+[Keywords full notes](https://github.com/Nikhita-A/python-for-devops/blob/main/Day-03/keywords.md) `MUST MUST READ`
+ 
+* Keywords are used `to build and implement the logic in python`
+* Eg: 'for' in for loop, if/else, try/except etc..\
+* Without keywords we cannot write a program/build a logic in python
+
+### Variables
+
+[Variables full notes](https://github.com/Nikhita-A/python-for-devops/blob/main/Day-03/variables.md)
+
+* Variables are used to parameterize the values in a program instead of hardcoding them
+* Reducing the time, efforts and errors
+* Types of variables:
+    * Global variables: applicable for all the functions in a program
+	* Local variables: applicable to only specific functions in a program
+* Naming convention : 
+    * It is a good practice to declare variable names in `lower case`
+    * Snake casing: `cloud_instance_type`
+	* Camel casing: `cloudInstanceType`
+	* Declare variables as descriptive as possible (name = "python" and not n = "python")
