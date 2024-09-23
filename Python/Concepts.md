@@ -130,3 +130,67 @@ project-1\Scripts\activate
 # to quit from venv
 deactivate
 ```
+
+Command Line Arguments
+----------------------
+
+* The inputs we pass to a program are called _command line arguments_
+* `sys` is a module that comes with python installation itself and we need not download it from PYPI
+* `sys` --> It is a module to read command line arguments
+* Syntax:
+```python
+# to read the first argument
+sys.argv[1]
+```
+* For _sys_ module to work, we need to first `import` that module in the first line of program
+* By default, arguments are read as `strings` in python. So for `number` arguments, we need to convert it as an `int` or `float`
+```python
+int(sys.argv[2])
+float(sys.argv[2])
+```
+* `Calculator` program using _command line arguments_
+
+```python
+import sys
+
+def addition(num1, num2):
+    add = num1 + num2
+    return add
+    
+def sub(num1, num2):
+    subtract = num1 - num2
+    return subtract
+
+num1 = float(sys.argv[1])
+operation = sys.argv[2]
+num2 = float(sys.argv[3])
+
+if operation == "add":
+    output = addition(num1, num2)
+    print(output)
+
+if operation == "sub":
+    output = sub(num1, num2)
+    print(output)
+```
+
+Environmental Variables (Env vars)
+----------------------------------
+
+* Env vars are used when we want to pass senitive information like passwords, API keys, token, certificates etc.. within a program 
+* To read the environment variables, we use a module called `os`
+```python
+# In cmd terminal export the env values
+export password="python@123"  #command 1
+export APItoken="bvhgd51ccagyu245gahegacy234" #command 2
+
+# python program
+import os
+
+print(os.getenv("password"))
+print(os.getenv("APItoken"))
+
+# Run the program to get the output 
+python@123
+bvhgd51ccagyu245gahegacy234
+```
