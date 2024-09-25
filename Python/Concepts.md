@@ -194,3 +194,23 @@ print(os.getenv("APItoken"))
 python@123
 bvhgd51ccagyu245gahegacy234
 ```
+
+Operators
+----------
+
+[Operators detailed notes](https://github.com/Nikhita-A/python-for-devops/tree/main/Day-06/01-Notes)  `MUST READ`
+
+### Assignment Operators
+* Addition assignment operator (+=)
+```python
+# lets say
+a = 3
+a = a + 2
+then a = 5
+
+# this is written as
+a = 3
+a += 2
+print(a)
+#Output will be 5
+```
