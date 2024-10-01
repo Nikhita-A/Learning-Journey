@@ -87,6 +87,7 @@ print("Value of subtraction is " + str(sub(10, 5)))
 print("Value of multiplication is " + str(mul(10, 5)))
 print("Value of division is " + str(div(10, 5)))
 ```
+* `Requests` module in python is used to connect with APIs and accessing the Urls
 
 Packages in Python
 ------------------
